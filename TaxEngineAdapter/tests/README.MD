@@ -6,7 +6,7 @@ These classes work on release version 230 and above
 
 ## Deployment
 
-The classes need to be compiled in this order:
+The following class needs to be compiled:
 
 ```
 AvalaraAdapterTests.apex
