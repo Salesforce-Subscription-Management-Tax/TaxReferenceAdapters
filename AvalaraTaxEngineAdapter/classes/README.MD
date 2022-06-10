@@ -4,9 +4,14 @@ These are the files for the implementation of Tax Engine  adapter for Avalara Ta
 
 ## Deployment
 
-The following class needs to be compiled:
+The classes need to be compiled in this order:
 
 ```
-AvalaraAdapter.apex
+1. JsonSuccessParser.apex
+2. JsonErrorParser.apex
+3. HttpService.apex
+4. AvalaraJSONBuilder.apex
+5. CalculateTaxService.apex
+6. AvalaraAdapter.apex
 
 ```
