@@ -5,7 +5,7 @@ public class AvalaraAdapterTests{
         Double d = 1.0;
         commercetax.TaxAddressRequest add = new commercetax.TaxAddressRequest('city','country',d,d,'postCode','state','street','locationCode');
         commercetax.HeaderTaxAddressesRequest addresses = new commercetax.HeaderTaxAddressesRequest(add, add, add, add, add);
-        commercetax.TaxCustomerDetailsRequest customer = new commercetax.TaxCustomerDetailsRequest(null,'code','exemptionNo','exemptionReason','taxCertificateId');
+        commercetax.TaxCustomerDetailsRequest customer = new commercetax.TaxCustomerDetailsRequest('',code','exemptionNo','exemptionReason');
         
         commercetax.LineTaxAddressesRequest lineAddresses = new commercetax.LineTaxAddressesRequest(add, add, add, add, add);
         commercetax.TaxLineItemRequest taxLineItem = new commercetax.TaxLineItemRequest(lineAddresses, d, 'description', 'productCode', d, 'lineNumber', 'taxCode',system.today());
